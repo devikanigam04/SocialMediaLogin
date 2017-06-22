@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.socialmedialogin.LoggedinActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_picture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_alignTop="@+id/iv_picture"
+            android:layout_toEndOf="@+id/iv_picture"
+            android:layout_toRightOf="@+id/iv_picture"/>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="abc"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toEndOf="@+id/iv_picture"
+            android:layout_toRightOf="@+id/iv_picture"/>
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="abc"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/tv_email"
+            android:layout_toEndOf="@+id/iv_picture"
+            android:layout_toRightOf="@+id/iv_picture" />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="abc"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_toEndOf="@+id/iv_picture"
+            android:layout_toRightOf="@+id/iv_picture"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
